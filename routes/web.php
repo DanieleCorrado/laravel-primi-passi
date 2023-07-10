@@ -21,16 +21,7 @@ Route::get('/about', function () {
     return view('about');
 })->name('about');
 
-class User
-{
-    public $name;
-    public $email;
-
-    public function __construct($name, $email) {
-        $this -> name = $name;
-        $this -> email = $email;
-    }
-};
+include_once("../resources/classes/users.php");
 
 Route::get('/contact', function () {
 
